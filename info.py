@@ -41,11 +41,11 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information *
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "LazyDeveloper")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "jagadeesh")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jagadeesh')
 
 # LOG CHANNELS *
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001942386281))
 LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS', 0))
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL'))
 PRIME_MEMBERS_LOGS = int(environ.get('PRIME_MEMBERS_LOGS'))
