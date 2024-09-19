@@ -30,8 +30,8 @@ PICS = (environ.get('PICS', 'https://telegra.ph/file/7e56d907542396289fee4.jpg h
 PRIME_LOGO = (environ.get('PRIME_LOGO', 'https://telegra.ph/file/ca18e2c794f4ea1c3135b.jpg'))
 
 # Admins, Channels & Users *
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1946827941').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002466518240').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -46,19 +46,19 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jagadeesh')
 
 # LOG CHANNELS *
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001942386281))
-LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS', 0))
-REQ_CHANNEL = int(environ.get('REQ_CHANNEL'))
-PRIME_MEMBERS_LOGS = int(environ.get('PRIME_MEMBERS_LOGS'))
+LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS', -1001942386281))
+REQ_CHANNEL = int(environ.get('REQ_CHANNEL' -1002361219577))
+PRIME_MEMBERS_LOGS = int(environ.get('PRIME_MEMBERS_LOGS' -1001942386281))
 
 # PREMIUM ACCESS *
 lazydownloaders = [int(lazydownloaders) if id_pattern.search(lazydownloaders) else lazydownloaders for lazydownloaders in environ.get('PRIME_DOWNLOADERS', '').split()]
 PRIME_USERS = (lazydownloaders) if lazydownloaders else [] # users who can get & download file without url shortner
 lazy_renamers = [int(lazrenamers) if id_pattern.search(lazrenamers) else lazrenamers for lazrenamers in environ.get('LAZY_RENAMERS', '').split()]
 LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else [] #Add user id of the user in this field those who you want to be Authentic user for file renaming features
-LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5965340120').split()]
+LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '').split()]
 
 QR_CODE_IMG = environ.get('QR_CODE_IMG','https://telegra.ph/file/ca18e2c794f4ea1c3135b.jpg') #add url link of your qr code to recieve money - use telegraph bot or other source to get image
-UPI_ID = environ.get('UPI_ID', 'lazydeveloper@ybl') #enter your upi id here - grab it from your online payment methods.
+UPI_ID = environ.get('UPI_ID', '') #enter your upi id here - grab it from your online payment methods.
 
 # Others
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/real_MoviesAdda3/186') # Tutorial video link for opening shortlink website 
